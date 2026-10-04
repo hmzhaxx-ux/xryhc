@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HMZAXX - إرسال البيانات</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:flex;justify-content:center;align-items:center;padding:20px;
+font-family:Tahoma,Arial,sans-serif;background:linear-gradient(135deg,#0f172a,#1e3a5f);color:#fff}
+.card{width:min(100%,460px);padding:32px;border-radius:22px;background:rgba(255,255,255,.09);
+border:1px solid rgba(255,255,255,.15);box-shadow:0 20px 60px rgba(0,0,0,.35)}
+.logo{text-align:center;font-size:30px;font-weight:bold;color:#67c8ff;letter-spacing:2px}
+h1{text-align:center;font-size:22px;margin:12px 0 8px}
+p{text-align:center;color:#cbd5e1;line-height:1.8}
+label{display:block;margin:17px 0 7px;font-weight:bold}
+input,textarea{width:100%;padding:13px;border-radius:11px;border:1px solid #64748b;
+background:#0f172a;color:#fff;font:inherit;outline:none}
+input:focus,textarea:focus{border-color:#67c8ff}
+textarea{min-height:100px;resize:vertical}
+button{width:100%;margin-top:22px;padding:14px;border:0;border-radius:11px;
+background:#38a9e8;color:#071827;font-size:16px;font-weight:bold;cursor:pointer}
+button:hover{background:#67c8ff}
+.note{font-size:12px;color:#94a3b8;margin-top:16px}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="logo">HMZAXX</div>
+  <h1>نموذج إرسال البيانات</h1>
+  <p>اكتب البيانات المطلوبة ثم اضغط على زر الإرسال.</p>
+
+  <form action="https://formsubmit.co/hmzhaxx@gmail.com" method="POST">
+    <input type="hidden" name="_subject" value="بيانات جديدة من موقع HMZAXX">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="true">
+
+    <label for="name">اسمك</label>
+    <input id="name" name="الاسم" type="text" maxlength="80" required placeholder="اكتب اسمك">
+
+    <label for="father">اسم الأب</label>
+    <input id="father" name="اسم الأب" type="text" maxlength="80" required placeholder="اكتب اسم الأب">
+
+    <label for="extra">معلومات إضافية</label>
+    <textarea id="extra" name="المعلومات الإضافية" maxlength="1000" placeholder="اكتب أي معلومات تريد إضافتها"></textarea>
+
+    <button type="submit">إرسال البيانات</button>
+  </form>
+
+  <p class="note">تنبيه: لا تكتب كلمات مرور أو معلومات مالية أو أي بيانات شديدة الحساسية.</p>
+</div>
+</body>
+</html>
